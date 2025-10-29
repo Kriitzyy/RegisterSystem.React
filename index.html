@@ -1,14 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Center of the Screen!!</title>
+  <style>
+      /* -------------------------------
+       Grundinställningar
+       ------------------------------- */
+    html, body {
+      height: 100%;            /* Ta upp hela skärmens höjd */
+      margin: 0;               /* Ta bort standardmarginaler */
+      padding: 0;              /* Ta bort standardpadding */
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0; /* Bakgrundsfärg */
+      color: #333;              /* Textfärg */
+    }
+
+    /* -------------------------------
+       Flexbox för centrering
+       ------------------------------- */
+    body {
+      display: flex;            /* Aktivera flexbox på body */
+      justify-content: center;  /* Horisontellt centrerat */
+      align-items: center;      /* Vertikalt centrerat */
+    }
+
+    /* -------------------------------
+       Container med kolumnlayout
+       ------------------------------- */
+    .container {
+      display: flex;            /* Flexbox på container */
+      flex-direction: column;   /* Stapla element vertikalt */
+      align-items: center;      /* Centrera horisontellt */
+      gap: 20px;                /* Avstånd mellan siffror */
+      font-size: 2rem;          /* Storlek på siffror */
+      padding: 20px;            /* Inre marginal */
+      border: 2px solid #ccc;   /* Ram runt container */
+      background-color: #fff;   /* Bakgrundsfärg på container */
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1); /* Liten skugga */
+    }
+
+    /* -------------------------------
+       Extra styling på siffrorna (valfritt)
+       ------------------------------- */
+    .container div {
+      width: 50px;              /* Bredd */
+      text-align: center;       /* Centrerad text */
+      border-radius: 5px;       /* Runda hörn */
+      padding: 10px;            /* Inre marginal */
+      background-color: #e0e0ff; /* Bakgrundsfärg på varje siffra */
+    }
+  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
+
   
 
-    <script src="js/script.js"></script>
-</body>
+  <div class="Form">
+    <div>Form 1 </div>
+    <div>Form 2 </div>
+  </div>    
 </html>
