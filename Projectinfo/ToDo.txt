@@ -1,4 +1,0 @@
-
-Bransches Github
-Dela upp projektet i flera delar som branches
-som GUI-Commtents, main, react osv. 
