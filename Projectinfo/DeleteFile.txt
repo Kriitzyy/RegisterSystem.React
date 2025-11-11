@@ -1,0 +1,66 @@
+HTML Koden med Commentarer, klistra in i comments branch och sedan commita denna kod där med comments, samma för css, js, mm.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Center of the Screen!!</title>
+  <style>
+      /*-------------------------------
+       Default styling settings 
+       ------------------------------- */
+    html, body {
+      height: 100%;           
+      margin: 0;           
+      padding: 0;             
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0; 
+      color: #333;             
+    }
+
+    /* -------------------------------
+       Flexbox to center content 2
+       ------------------------------- */
+    body {
+      display: flex;           
+      justify-content: center; 
+      align-items: center;      
+    }
+
+    /* -------------------------------
+      Container with column layout
+       ------------------------------- */
+    .container {
+      display: flex;          
+      flex-direction: column;  
+      align-items: center;      
+      gap: 20px;                
+      font-size: 2rem;         
+      padding: 20px;            
+      border: 2px solid #ccc;   
+      background-color: #fff;   
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1); 
+    }
+
+    /* -------------------------------
+       Styling for container (Form)
+       ------------------------------- */
+    .container div {
+      width: 50px;              
+      text-align: center;       
+      border-radius: 5px;      
+      padding: 10px;            
+      background-color: #e0e0ff;
+    }
+  </style>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 2 Form container -->
+  <div class="Form">
+    <div>Form 1 </div>
+    <div>Form 2 </div>
+  </div>    
+</html>
